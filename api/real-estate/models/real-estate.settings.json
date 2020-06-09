@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "real_estates",
+  "info": {
+    "name": "real estate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "rooms": {
+      "type": "integer"
+    },
+    "parking_lot": {
+      "type": "integer",
+      "required": true
+    },
+    "bathrooms": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "price": {
+      "type": "biginteger",
+      "required": true
+    },
+    "picture": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "category": {
+      "model": "categories"
+    },
+    "agent": {
+      "model": "agent"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/real-estates",
+      "handler": "real-estate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/real-estates/count",
+      "handler": "real-estate.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/real-estates/:id",
+      "handler": "real-estate.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/real-estates",
+      "handler": "real-estate.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/real-estates/:id",
+      "handler": "real-estate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/real-estates/:id",
+      "handler": "real-estate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

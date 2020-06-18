@@ -11,7 +11,8 @@
   "attributes": {
     "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "default": "not-assigned"
     },
     "phone": {
       "type": "string"
